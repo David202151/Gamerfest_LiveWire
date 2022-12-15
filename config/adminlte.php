@@ -314,7 +314,7 @@ return [
         [
             'text'        => 'Categorias',
             'url'         => 'http://127.0.0.1:8000/categorias',
-            'icon'        => 'far fa-fw fa-books',
+            'icon'        => 'fas fa-fw fa-book',
             
         ],
         [
@@ -325,48 +325,39 @@ return [
         [
             'text'        => 'Horarios',
             'url'         => 'http://127.0.0.1:8000/horarios',
-            'icon'        => 'fas fa-fw fa-gamepad',
+            'icon'        => 'fas fa-fw fa-history',
         ],
         [
             'text'        => 'Aulas',
             'url'         => 'http://127.0.0.1:8000/aulas',
-            'icon'        => 'fas fa-fw fa-gamepad',
+            'icon'        => 'fa fa-home fa-fw',
         ],
         [
             'text'        => 'Eventos',
-            'url'         => '#',
-            'icon'        => 'fas fa-fw fa-gamepad',
+            'url'         => 'http://127.0.0.1:8000/eventos',
+            'icon'        => 'fas fa-fw fa-pen',
         ],
         [
             'text'        => 'Jugadores',
             'url'         => 'http://127.0.0.1:8000/jugadores',
-            'icon'        => 'fas fa-fw fa-gamepad',
+            'icon'        => 'fas fa-fw fa-users',
         ],
         [
             'text'        => 'Inscripcion Grupal',
-            'url'         => '#',
-            'icon'        => 'fas fa-fw fa-gamepad',
+            'url'         => 'http://127.0.0.1:8000/insgrupales',
+            'icon'        => 'fas fa-fw fa-address-card',
         ],
         [
             'text'        => 'Inscripcion Individual',
             'url'         => 'http://127.0.0.1:8000/insinvidviduales',
-            'icon'        => 'fas fa-fw fa-gamepad',
+            'icon'        => 'fas fa-fw fa-address-book',
         ],
         [
             'text'        => 'Equipos',
-            'url'         => '#',
-            'icon'        => 'fas fa-fw fa-gamepad',
+            'url'         => 'http://127.0.0.1:8000/equipos',
+            'icon'        => 'fas fa-fw fa-user-circle',
         ],
-        [
-            'text'        => 'Partida Grupal',
-            'url'         => '#',
-            'icon'        => 'fas fa-fw fa-gamepad',
-        ],
-        [
-            'text'        => 'Partida Individual',
-            'url'         => '#',
-            'icon'        => 'fas fa-fw fa-gamepad',
-        ],
+        
         
     ],
 
