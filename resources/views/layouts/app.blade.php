@@ -37,6 +37,12 @@
                     <ul class="navbar-nav mr-auto">
 						<!--Nav Bar Hooks - Do not delete!!-->
 						<li class="nav-item">
+                            <a href="{{ url('/insinvidviduales') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Insinvidviduales</a> 
+                        </li>
+						<li class="nav-item">
+                            <a href="{{ url('/jugadores') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Jugadores</a> 
+                        </li>
+						<li class="nav-item">
                             <a href="{{ url('/horarios') }}" class="nav-link"><i class="fab fa-laravel text-info"></i> Horarios</a> 
                         </li>
 						<li class="nav-item">

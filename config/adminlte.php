@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Gamer</b>Fest',
     'logo_img' => 'imagenes/gamerfest.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -339,7 +339,7 @@ return [
         ],
         [
             'text'        => 'Jugadores',
-            'url'         => '#',
+            'url'         => 'http://127.0.0.1:8000/jugadores',
             'icon'        => 'fas fa-fw fa-gamepad',
         ],
         [
@@ -349,7 +349,7 @@ return [
         ],
         [
             'text'        => 'Inscripcion Individual',
-            'url'         => '#',
+            'url'         => 'http://127.0.0.1:8000/insinvidviduales',
             'icon'        => 'fas fa-fw fa-gamepad',
         ],
         [
