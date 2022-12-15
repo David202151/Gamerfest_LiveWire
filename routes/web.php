@@ -32,5 +32,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //Route Hooks - Do not delete//
+	Route::view('horarios', 'livewire.horarios.index')->middleware('auth');
+	Route::view('aulas', 'livewire.aulas.index')->middleware('auth');
 	Route::view('videojuegos', 'livewire.videojuegos.index')->middleware('auth');
 	Route::view('categorias', 'livewire.categorias.index')->middleware('auth');

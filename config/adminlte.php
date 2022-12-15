@@ -314,13 +314,58 @@ return [
         [
             'text'        => 'Categorias',
             'url'         => 'http://127.0.0.1:8000/categorias',
-            'icon'        => 'far fa-fw fa-user',
+            'icon'        => 'far fa-fw fa-books',
             
         ],
         [
-            'text' => 'Videojuegos',
-            'url'  => 'http://127.0.0.1:8000/videojuegos',
-            'icon' => 'fas fa-fw fa-gamepad',
+            'text'        => 'Videojuegos',
+            'url'         => 'http://127.0.0.1:8000/videojuegos',
+            'icon'        => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text'        => 'Horarios',
+            'url'         => 'http://127.0.0.1:8000/horarios',
+            'icon'        => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text'        => 'Aulas',
+            'url'         => 'http://127.0.0.1:8000/aulas',
+            'icon'        => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text'        => 'Eventos',
+            'url'         => '#',
+            'icon'        => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text'        => 'Jugadores',
+            'url'         => '#',
+            'icon'        => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text'        => 'Inscripcion Grupal',
+            'url'         => '#',
+            'icon'        => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text'        => 'Inscripcion Individual',
+            'url'         => '#',
+            'icon'        => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text'        => 'Equipos',
+            'url'         => '#',
+            'icon'        => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text'        => 'Partida Grupal',
+            'url'         => '#',
+            'icon'        => 'fas fa-fw fa-gamepad',
+        ],
+        [
+            'text'        => 'Partida Individual',
+            'url'         => '#',
+            'icon'        => 'fas fa-fw fa-gamepad',
         ],
         
     ],
