@@ -5,6 +5,10 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Insinvidviduale;
+use App\Models\Videojuego;
+use App\Models\Jugadore;
+
+
 
 class Insinvidviduales extends Component
 {
@@ -16,8 +20,10 @@ class Insinvidviduales extends Component
 
     public function render()
     {
+        $videojuego = Videojuego::pluck('nombre', 'id');
+        $jugador = Jugadore::pluck('nombre', 'id');
 		$keyWord = '%'.$this->keyWord .'%';
-        return view('livewire.insinvidviduales.view', [
+        return view('livewire.insinvidviduales.view',['videojuego'=>$videojuego, 'jugador'=>$jugador], [
             'insinvidviduales' => Insinvidviduale::latest()
 						->orWhere('id_videjuegos', 'LIKE', $keyWord)
 						->orWhere('id_jugadores', 'LIKE', $keyWord)

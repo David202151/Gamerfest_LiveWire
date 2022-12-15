@@ -12,11 +12,23 @@
 				<form>
             <div class="form-group">
                 <label for="id_videjuegos"></label>
-                <input wire:model="id_videjuegos" type="text" class="form-control" id="id_videjuegos" placeholder="Id Videjuegos">@error('id_videjuegos') <span class="error text-danger">{{ $message }}</span> @enderror
+                <!-- <input wire:model="id_videjuegos" type="text" class="form-control" id="id_videjuegos" placeholder="Id Videjuegos">@error('id_videjuegos') <span class="error text-danger">{{ $message }}</span> @enderror -->
+                <select wire:model="id_videjuegos" class="form-control" name="" id="id_videjuegos">
+                <option value="0">-Seleccione-</option>
+                    @foreach ($videojuego as $id=>$nombre)
+                        <option value="{{$id}}">{{$nombre}}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="id_jugadores"></label>
-                <input wire:model="id_jugadores" type="text" class="form-control" id="id_jugadores" placeholder="Id Jugadores">@error('id_jugadores') <span class="error text-danger">{{ $message }}</span> @enderror
+                <!-- <input wire:model="id_jugadores" type="text" class="form-control" id="id_jugadores" placeholder="Id Jugadores">@error('id_jugadores') <span class="error text-danger">{{ $message }}</span> @enderror -->
+                <select wire:model="id_jugadores" class="form-control" name="" id="id_jugadores">
+                <option value="0">-Seleccione-</option>
+                    @foreach ($jugador as $id=>$nombre)
+                        <option value="{{$id}}">{{$nombre}}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="observaciones"></label>

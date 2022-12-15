@@ -13,23 +13,35 @@
 					<input type="hidden" wire:model="selected_id">
             <div class="form-group">
                 <label for="id_videjuegos"></label>
-                <input wire:model="id_videjuegos" type="text" class="form-control" id="id_videjuegos" placeholder="Id Videjuegos">@error('id_videjuegos') <span class="error text-danger">{{ $message }}</span> @enderror
+                <!-- <input wire:model="id_videjuegos" type="text" class="form-control" id="id_videjuegos" placeholder="Id Videjuegos">@error('id_videjuegos') <span class="error text-danger">{{ $message }}</span> @enderror -->
+                <select wire:model="id_videjuegos" class="form-control" name="" id="id_videjuegos">
+                <option value="0">-Seleccione-</option>
+                    @foreach ($videojuego as $id=>$nombre)
+                        <option value="{{$id}}">{{$nombre}}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="id_aulas"></label>
-                <input wire:model="id_aulas" type="text" class="form-control" id="id_aulas" placeholder="Id Aulas">@error('id_aulas') <span class="error text-danger">{{ $message }}</span> @enderror
+                <!-- <input wire:model="id_aulas" type="text" class="form-control" id="id_aulas" placeholder="Id Aulas">@error('id_aulas') <span class="error text-danger">{{ $message }}</span> @enderror -->
+                <select wire:model="id_aulas" class="form-control" name="" id="id_aulas">
+                <option value="0">-Seleccione-</option>
+                    @foreach ($aula as $id=>$nombre)
+                        <option value="{{$id}}">{{$nombre}}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="tiempo_inicio"></label>
-                <input wire:model="tiempo_inicio" type="text" class="form-control" id="tiempo_inicio" placeholder="Tiempo Inicio">@error('tiempo_inicio') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="tiempo_inicio" type="time" class="form-control" id="tiempo_inicio" placeholder="Tiempo Inicio">@error('tiempo_inicio') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="tiempo_fin"></label>
-                <input wire:model="tiempo_fin" type="text" class="form-control" id="tiempo_fin" placeholder="Tiempo Fin">@error('tiempo_fin') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="tiempo_fin" type="time" class="form-control" id="tiempo_fin" placeholder="Tiempo Fin">@error('tiempo_fin') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="fecha"></label>
-                <input wire:model="fecha" type="text" class="form-control" id="fecha" placeholder="Fecha">@error('fecha') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="fecha" type="date" class="form-control" id="fecha" placeholder="Fecha">@error('fecha') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="observaciones"></label>

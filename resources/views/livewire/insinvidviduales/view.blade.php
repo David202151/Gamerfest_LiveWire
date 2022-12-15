@@ -42,7 +42,7 @@
 							@foreach($insinvidviduales as $row)
 							<tr>
 								<td>{{ $loop->iteration }}</td> 
-								<td>{{ $row->id_videjuegos }}</td>
+								<td>{{ $row->videojuego->nombre  }}</td>
 								<td>{{ $row->id_jugadores }}</td>
 								<td>{{ $row->observaciones }}</td>
 								<td width="90">

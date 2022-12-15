@@ -43,7 +43,7 @@
 							@foreach($videojuegos as $row)
 							<tr>
 								<td>{{ $loop->iteration }}</td> 
-								<td>{{ $row->id_categoria }}</td>
+								<td>{{ $row->categoria->nombre }}</td>
 								<td>{{ $row->nombre }}</td>
 								<td>{{ $row->precio }}</td>
 								<td>{{ $row->descripcion }}</td>

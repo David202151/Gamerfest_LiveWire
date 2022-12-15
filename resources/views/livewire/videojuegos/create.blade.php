@@ -12,7 +12,13 @@
 				<form>
             <div class="form-group">
                 <label for="id_categoria"></label>
-                <input wire:model="id_categoria" type="text" class="form-control" id="id_categoria" placeholder="Id Categoria">@error('id_categoria') <span class="error text-danger">{{ $message }}</span> @enderror
+                <!--<input wire:model="id_categoria" type="text" class="form-control" id="id_categoria" placeholder="Id Categoria">@error('id_categoria') <span class="error text-danger">{{ $message }}</span> @enderror-->
+                <select wire:model="id_categoria" class="form-control" name="" id="id_categoria">
+                <option value="0">-Seleccione-</option>
+                    @foreach ($categoria as $id=>$nombre)
+                        <option value="{{$id}}">{{$nombre}}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="nombre"></label>

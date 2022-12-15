@@ -32,8 +32,8 @@
 						<thead class="thead">
 							<tr> 
 								<td>#</td> 
-								<th>Id Videjuegos</th>
-								<th>Id Aulas</th>
+								<th>Videjuegos</th>
+								<th>Aulas</th>
 								<th>Tiempo Inicio</th>
 								<th>Tiempo Fin</th>
 								<th>Fecha</th>
@@ -45,8 +45,8 @@
 							@foreach($horarios as $row)
 							<tr>
 								<td>{{ $loop->iteration }}</td> 
-								<td>{{ $row->id_videjuegos }}</td>
-								<td>{{ $row->id_aulas }}</td>
+								<td>{{ $row->videojuego->nombre }}</td>
+								<td>{{ $row->aula->nombre }}</td>
 								<td>{{ $row->tiempo_inicio }}</td>
 								<td>{{ $row->tiempo_fin }}</td>
 								<td>{{ $row->fecha }}</td>

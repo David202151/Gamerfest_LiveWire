@@ -5,6 +5,8 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Horario;
+use App\Models\Videojuego;
+use App\Models\Aula;
 
 class Horarios extends Component
 {
@@ -16,8 +18,10 @@ class Horarios extends Component
 
     public function render()
     {
+        $videojuego = Videojuego::pluck('nombre', 'id');
+        $aula = Aula::pluck('nombre', 'id');
 		$keyWord = '%'.$this->keyWord .'%';
-        return view('livewire.horarios.view', [
+        return view('livewire.horarios.view',['videojuego'=>$videojuego, 'aula'=>$aula], [
             'horarios' => Horario::latest()
 						->orWhere('id_videjuegos', 'LIKE', $keyWord)
 						->orWhere('id_aulas', 'LIKE', $keyWord)

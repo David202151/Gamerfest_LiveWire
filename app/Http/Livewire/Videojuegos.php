@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Videojuego;
+use App\Models\Categoria;
 
 class Videojuegos extends Component
 {
@@ -16,8 +17,9 @@ class Videojuegos extends Component
 
     public function render()
     {
+        $categoria = Categoria::pluck('nombre', 'id');
 		$keyWord = '%'.$this->keyWord .'%';
-        return view('livewire.videojuegos.view', [
+        return view('livewire.videojuegos.view', ['categoria'=>$categoria],[
             'videojuegos' => Videojuego::latest()
 						->orWhere('id_categoria', 'LIKE', $keyWord)
 						->orWhere('nombre', 'LIKE', $keyWord)
