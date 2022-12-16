@@ -34,7 +34,7 @@
 								<td>#</td> 
 								<th>Nombre</th>
 								<th>Fecha</th>
-								<th>Id Aulas</th>
+								<th>Aulas</th>
 								<th>Descripcion</th>
 								<td>ACTIONS</td>
 							</tr>
@@ -45,7 +45,7 @@
 								<td>{{ $loop->iteration }}</td> 
 								<td>{{ $row->nombre }}</td>
 								<td>{{ $row->fecha }}</td>
-								<td>{{ $row->id_aulas }}</td>
+								<td>{{ $row->aula->nombre }}</td>
 								<td>{{ $row->descripcion }}</td>
 								<td width="90">
 								<div class="btn-group">

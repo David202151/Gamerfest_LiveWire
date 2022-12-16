@@ -5,19 +5,26 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Insgrupale;
+use App\Models\Jugadore;
+use App\Models\Equipo;
+use App\Models\Videojuego;
 
 class Insgrupales extends Component
 {
     use WithPagination;
 
-	protected $paginationTheme = 'bootstrap';
+	
+    protected $paginationTheme = 'bootstrap';
     public $selected_id, $keyWord, $id_jugadores, $id_equipos, $id_videjuegos, $participantes, $observaciones;
     public $updateMode = false;
 
     public function render()
     {
+        $videojuego = Videojuego::pluck('nombre', 'id');
+        $equipo = Equipo::pluck('nombre', 'id');
+        $jugador = Jugadore::pluck('nombre', 'id');
 		$keyWord = '%'.$this->keyWord .'%';
-        return view('livewire.insgrupales.view', [
+        return view('livewire.insgrupales.view',['videojuego'=>$videojuego, 'equipo'=>$equipo,'jugador'=>$jugador ], [
             'insgrupales' => Insgrupale::latest()
 						->orWhere('id_jugadores', 'LIKE', $keyWord)
 						->orWhere('id_equipos', 'LIKE', $keyWord)

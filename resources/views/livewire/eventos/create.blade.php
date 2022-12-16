@@ -16,11 +16,17 @@
             </div>
             <div class="form-group">
                 <label for="fecha"></label>
-                <input wire:model="fecha" type="text" class="form-control" id="fecha" placeholder="Fecha">@error('fecha') <span class="error text-danger">{{ $message }}</span> @enderror
+                <input wire:model="fecha" type="date" class="form-control" id="fecha" placeholder="Fecha">@error('fecha') <span class="error text-danger">{{ $message }}</span> @enderror
             </div>
             <div class="form-group">
                 <label for="id_aulas"></label>
-                <input wire:model="id_aulas" type="text" class="form-control" id="id_aulas" placeholder="Id Aulas">@error('id_aulas') <span class="error text-danger">{{ $message }}</span> @enderror
+                <!-- <input wire:model="id_aulas" type="text" class="form-control" id="id_aulas" placeholder="Id Aulas">@error('id_aulas') <span class="error text-danger">{{ $message }}</span> @enderror -->
+                <select wire:model="id_aulas" class="form-control" name="" id="id_aulas">
+                <option value="0">-Seleccione-</option>
+                    @foreach ($aula as $id=>$nombre)
+                        <option value="{{$id}}">{{$nombre}}</option>
+                    @endforeach
+                </select>
             </div>
             <div class="form-group">
                 <label for="descripcion"></label>

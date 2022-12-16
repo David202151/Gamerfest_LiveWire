@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Evento;
+use App\Models\Aula;
 
 class Eventos extends Component
 {
@@ -16,8 +17,9 @@ class Eventos extends Component
 
     public function render()
     {
+        $aula = Aula::pluck('nombre', 'id');
 		$keyWord = '%'.$this->keyWord .'%';
-        return view('livewire.eventos.view', [
+        return view('livewire.eventos.view',['aula'=>$aula], [
             'eventos' => Evento::latest()
 						->orWhere('nombre', 'LIKE', $keyWord)
 						->orWhere('fecha', 'LIKE', $keyWord)
