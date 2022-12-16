@@ -32,9 +32,9 @@
 						<thead class="thead">
 							<tr> 
 								<td>#</td> 
-								<th>Id Jugadores</th>
-								<th>Id Equipos</th>
-								<th>Id Videjuegos</th>
+								<th>Jugadores</th>
+								<th>Equipos</th>
+								<th>Videjuegos</th>
 								<th>Participantes</th>
 								<th>Observaciones</th>
 								<td>ACTIONS</td>
@@ -44,9 +44,9 @@
 							@foreach($insgrupales as $row)
 							<tr>
 								<td>{{ $loop->iteration }}</td> 
-								<td>{{ $row->id_jugadores }}</td>
-								<td>{{ $row->id_equipos }}</td>
-								<td>{{ $row->id_videjuegos }}</td>
+								<td>{{ $row->id_jugadores}}</td>
+								<td>{{ $row->equipo->nombre }}</td>
+								<td>{{ $row->videojuego->nombre }}</td>
 								<td>{{ $row->participantes }}</td>
 								<td>{{ $row->observaciones }}</td>
 								<td width="90">
