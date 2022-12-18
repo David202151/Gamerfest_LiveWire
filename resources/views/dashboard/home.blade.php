@@ -19,11 +19,11 @@
 						<div class="card border-info mx-sm-1 p-3">
 							<div class="card border-info text-info p-3"><span class="text-center fa fa-plane-departure" aria-hidden="true"></span></div>
 							<div class="text-info text-center mt-3">
-								<h4>Videjuegos</h4>
+								<h4>Inscripcciones Totales</h4>
 							</div>
 							<div class="text-info text-center mt-2">
-								<h1>{{ $contar['total_videojuegos'] }}</h1>
-								
+								<h1>{{ $contar['total_inscripciones'] }}</h1>
+
 							</div>
 
 						</div>
@@ -32,7 +32,7 @@
 						<div class="card border-success mx-sm-1 p-3">
 							<div class="card border-success text-success p-3 my-card"><span class="text-center fa fa-luggage-cart" aria-hidden="true"></span></div>
 							<div class="text-success text-center mt-3">
-								<h4>Jugadores</h4>
+								<h4>Cantidad de Jugadores</h4>
 							</div>
 							<div class="text-success text-center mt-2">
 								<h1>{{ $contar['total_jugadores'] }}</h1>
@@ -43,10 +43,10 @@
 						<div class="card border-danger mx-sm-1 p-3">
 							<div class="card border-danger text-danger p-3 my-card"><span class="text-center fa fa-person-booth" aria-hidden="true"></span></div>
 							<div class="text-danger text-center mt-3">
-								<h4>Aulas Disponibles</h4>
+								<h4>Cantidad de Equipos</h4>
 							</div>
 							<div class="text-danger text-center mt-2">
-								<h1>{{ $contar['total_aulas'] }}</h1>
+								<h1>{{ $contar['total_equipos'] }}</h1>
 							</div>
 						</div>
 					</div>
@@ -54,10 +54,10 @@
 						<div class="card border-warning mx-sm-1 p-3">
 							<div class="card border-warning text-warning p-3 my-card"><span class="text-center fa fa-users" aria-hidden="true"></span></div>
 							<div class="text-warning text-center mt-3">
-								<h4>Eventos</h4>
+								<h4>Recaudacion Total</h4>
 							</div>
 							<div class="text-warning text-center mt-2">
-								<h1>{{ $contar['total_eventos'] }}</h1>
+								<h1>{{ $contar['total_recaudacion'] }}</h1>
 							</div>
 						</div>
 					</div>
@@ -65,62 +65,29 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-8">
+
+			<div class="col-lg-4">
 				<div class="card">
 					<div class="card-header border-0">
 						<div class="d-flex justify-content-between">
-							<h3 class="card-title">Juegos con mas inscripcciones individuales</h3>
+							<h3 class="card-title">Resumen de recaudacion de inscripcciones</h3>
 						</div>
 					</div>
+					
 					<div class="card-body">
 						<div class="position-relative mb-4">
-							<canvas id="categoryChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+							<canvas id="pastelChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
 						</div>
 					</div>
+
 				</div>
 
 			</div>
 			<div class="col-lg-4">
 				<div class="card">
-					<div class="card-header border-0">
-						<h3 class="card-title">Top Juego Indivual</h3>
-
-					</div>
-					<div class="card-body d-flex">
-						<div class="col-9">
-							<h2>{{ $top_ind['nombre'] }}</h2>
-							<hr>
-							<div class="row">
-								<div class="col">
-									<p><b>Numero de Inscritos: {{ $top_ind['num_ind'] }}</b></p>
-								</div>
-								<div class="col">
-									<p><b>Ingresos Generados:</b></p>
-									<p class="text-success"><b> <i class="ion ion-ios-paper text-success"></i></b></p>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				<div class="card border-success mx-sm-1 p-3">
-					<div class="text-success text-center mt-3">
-						<h4>Total inscritos en juegos individuales</h4>
-					</div>
-					<div class="text-success text-center mt-2">
-						<h1>{{ $contar['total_inscripcionIndi'] }}</h1>
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<div class="row">
-			
-			<div class="col-lg-4">
-				<div class="card">
-					<div class="card-header border-0">
+					<div class="card-header d-flex justify-content-between">
 						<h3 class="card-title">Eventos a realizar</h3>
-
+						<a href="http://127.0.0.1:8000/eventos" class="link-success">Todos los eventos</a>
 					</div>
 					<div class="card-body table-responsive p-0">
 						<table class="table table-striped table-valign-middle">
@@ -141,6 +108,8 @@
 						</table>
 					</div>
 				</div>
+			</div>
+			<div class="col-lg-4">
 				<div class="card border-success mx-sm-1 p-3">
 					<div class="text-success text-center mt-3">
 						<h4>Total inscritos en juegos grupales</h4>
@@ -149,12 +118,39 @@
 						<h1>{{ $contar['total_inscripcionGru'] }}</h1>
 					</div>
 				</div>
+				<div class="card border-success mx-sm-1 p-3">
+					<div class="text-success text-center mt-3">
+						<h4>Total inscritos en juegos individuales</h4>
+					</div>
+					<div class="text-success text-center mt-2">
+						<h1>{{ $contar['total_inscripcionIndi'] }}</h1>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-8">
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
 				<div class="card">
 					<div class="card-header border-0">
 						<div class="d-flex justify-content-between">
+							<h3 class="card-title">Juegos con mas inscripcciones individuales</h3>
+							<a href="http://127.0.0.1:8000/insinvidviduales" class="link-success">Ver más</a>
+						</div>
+					</div>
+					<div class="card-body">
+						<div class="position-relative mb-4">
+							<canvas id="categoryChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-lg-6">
+				<div class="card">
+					<div class="card-header border-0">
+						<div class="d-flex justify-content-between" >
 							<h3 class="card-title">Juegos con mas inscripcciones grupales</h3>
+							<a href="http://127.0.0.1:8000/insgrupales" class="link-success">Ver más</a>
 						</div>
 					</div>
 					<div class="card-body">
@@ -165,7 +161,9 @@
 				</div>
 
 			</div>
+
 		</div>
+
 	</div>
 
 </div>
@@ -308,7 +306,33 @@
 			},
 		}
 	});
-	
 
+	// - PIE CHART -
+	//-------------
+	// Get context with jQuery - using jQuery's .get() method.
+	var pieChartCanvas = $('#pastelChart').get(0).getContext('2d')
+	var pieData = {
+		labels: [
+			'Incripcciones Individuales',
+			'Inscripcciones Grupales',
+		],
+		datasets: [{
+			data: [<?php echo $contar['total_recaudacionind'] ?>, <?php echo $contar['total_recaudaciongru'] ?>],
+			backgroundColor: ['#f39c12', '#00c0ef']
+		}]
+	}
+	var pieOptions = {
+		legend: {
+			display: true
+		}
+	}
+	// Create pie or douhnut chart
+	// You can switch between pie and douhnut using the method below.
+	// eslint-disable-next-line no-unused-vars
+	var pieChart = new Chart(pieChartCanvas, {
+		type: 'doughnut',
+		data: pieData,
+		options: pieOptions
+	})
 </script>
 @stop
