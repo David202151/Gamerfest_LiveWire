@@ -186,10 +186,10 @@
     <div class="col">
         <figure class="text-center">
             <blockquote class="blockquote">
-                <p>Una cita conocida, contenida en un elemento blockquote.</p>
+                <p> «La fuerza no procede de la capacidad física, sino de una voluntad indomable» </p>
             </blockquote>
             <figcaption class="blockquote-footer">
-                Alguien fomoso en <cite title="Título fuente">Título fuente</cite>
+               <cite title="Título fuente">Mahatma Gandhi</cite>
             </figcaption>
         </figure>
     </div>
@@ -210,7 +210,7 @@
     </div>
     <div class="col " >
     <img src="imagenes/home.png" alt="" width="30" height="30">
-       Belisario Quevedo
+       <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977">Ubicación Gamer Fest</a>
     </div>
   </div>
 </div>
