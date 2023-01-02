@@ -312,9 +312,9 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Categorias',
-            'url'         => 'http://127.0.0.1:8000/categorias',
-            'icon'        => 'fas fa-fw fa-book',
+            'text'        => 'Dashboard',
+            'url'         => 'http://127.0.0.1:8000/home',
+            'icon'        => 'fa-solid fa-gauge',
             
         ],
         [
