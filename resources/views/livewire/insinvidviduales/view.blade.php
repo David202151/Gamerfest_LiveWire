@@ -43,7 +43,7 @@
 							<tr>
 								<td>{{ $loop->iteration }}</td> 
 								<td>{{ $row->videojuego->nombre  }}</td>
-								<td>{{ $row->id_jugadores }}</td>
+								<td>{{ $row->jugadore->nombre }}</td>
 								<td>{{ $row->observaciones }}</td>
 								<td width="90">
 								<div class="btn-group">

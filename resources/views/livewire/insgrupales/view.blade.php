@@ -44,7 +44,7 @@
 							@foreach($insgrupales as $row)
 							<tr>
 								<td>{{ $loop->iteration }}</td> 
-								<td>{{ $row->id_jugadores}}</td>
+								<td>{{ $row->jugadore->nombre}}</td>
 								<td>{{ $row->equipo->nombre }}</td>
 								<td>{{ $row->videojuego->nombre }}</td>
 								<td>{{ $row->participantes }}</td>
