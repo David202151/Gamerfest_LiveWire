@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\JugadoresController as JugadoresV1;
 use App\Http\Controllers\Api\V1\VideojuegoController as VideojuegoV1;
 use App\Http\Controllers\Api\V1\CategoriaController as CategoriaV1;
+use App\Http\Controllers\Api\V1\InsgrupaleController as InsgrupaleV1;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -34,5 +35,8 @@ Route::apiResource('v1/categorias', CategoriaV1::class)
       ->only(['index','show', 'destroy'])
       ->middleware('auth:sanctum');
 
+Route::apiResource('v1/insgrupales', InsgrupaleV1::class)
+      ->only(['index','show', 'destroy'])
+      ->middleware('auth:sanctum');
 
 Route::post('login', [App\Http\Controllers\Api\LoginController::class, 'login']);
