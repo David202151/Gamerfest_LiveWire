@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Api\V1\JugadoresController as JugadoresV1;
 use App\Http\Controllers\Api\V1\VideojuegoController as VideojuegoV1;
+use App\Http\Controllers\Api\V1\CategoriaController as CategoriaV1;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -26,6 +27,10 @@ Route::apiResource('v1/jugadores', JugadoresV1::class)
       ->middleware('auth:sanctum');
 
 Route::apiResource('v1/videojuegos', VideojuegoV1::class)
+      ->only(['index','show', 'destroy'])
+      ->middleware('auth:sanctum');
+
+Route::apiResource('v1/categorias', CategoriaV1::class)
       ->only(['index','show', 'destroy'])
       ->middleware('auth:sanctum');
 
