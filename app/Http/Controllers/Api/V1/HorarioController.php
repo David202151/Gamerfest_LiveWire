@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Horario;
 use Illuminate\Http\Request;
 
+use App\Http\Resources\V1\HorarioResource;
+
 class HorarioController extends Controller
 {
     /**

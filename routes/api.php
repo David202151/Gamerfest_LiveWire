@@ -61,8 +61,7 @@ Route::apiResource('v1/horarios', HorarioV1::class)
       ->only(['index','show', 'destroy'])
       ->middleware('auth:sanctum');
 
-<<<<<<< HEAD
-=======
+
 Route::apiResource('v1/insinvidviduales', InsinvidvidualeV1::class)
       ->only(['index','show', 'destroy'])
       ->middleware('auth:sanctum');
@@ -71,5 +70,4 @@ Route::apiResource('v1/users', UserV1::class)
       ->only(['index','show', 'destroy'])
       ->middleware('auth:sanctum');
       
->>>>>>> main
 Route::post('login', [App\Http\Controllers\Api\LoginController::class, 'login']);
