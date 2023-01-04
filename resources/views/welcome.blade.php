@@ -92,12 +92,8 @@
                                 </div>
                                 </div>
                                 </center>
-
-
-                                
                                 </div>
                                 <div class="col order-1">
-
                                 <center>
                         <div class="grid grid-cols-1 md" >
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
@@ -124,6 +120,17 @@
             </div>        
         </div>
         <br>
+        <br>
+        
+        <div class="container justify-content-center">
+
+        <center>
+        
+        </center>
+       
+        </div>
+    
+        
         <br>
         
     </body>
@@ -183,13 +190,16 @@
     <div class="col">
      
     </div>
+    
+    
     <div class="col">
+    <br>
         <figure class="text-center">
             <blockquote class="blockquote">
-                <p>Una cita conocida, contenida en un elemento blockquote.</p>
+                <p> «La fuerza no procede de la capacidad física, sino de una voluntad indomable» </p>
             </blockquote>
             <figcaption class="blockquote-footer">
-                Alguien fomoso en <cite title="Título fuente">Título fuente</cite>
+               <cite title="Título fuente">Mahatma Gandhi</cite>
             </figcaption>
         </figure>
     </div>
@@ -198,7 +208,23 @@
     </div>
 </div>
   <br> 
-  <div class="row mx-2">
+  
+  <div class="row justify-content-center">
+            <div class="card col-sm-6 col-md-5 col-lg-6" style="width: 40rem;">
+            
+            <div class="card-body">
+                <h5 class="card-title">Ubicación</h5>
+                <img class="card-img-top" src="imagenes/Ubicacion-gamer-fest.png" alt="Card image cap">
+                <br>
+                <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977" class="btn btn-primary">+ info</a>
+            </div>
+            </div>
+            <div class="card col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0" style="width: 18rem;">
+            <br>
+                <img class="card-img-top" src="imagenes/Jugger.jpg" alt="Card image cap">
+            </div>
+    </div>
+    <div class="row mx-5 my-5">
     <div class="col" >
              
         <img src="imagenes/sobre.png" alt="" width="30" height="30">
@@ -210,10 +236,14 @@
     </div>
     <div class="col " >
     <img src="imagenes/home.png" alt="" width="30" height="30">
-       Belisario Quevedo
+       <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977">Ubicación Gamer Fest</a>
     </div>
   </div>
 </div>
+
+
+
+
 
 
 
