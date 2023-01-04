@@ -58,4 +58,5 @@ Route::apiResource('v1/eventos', EventoV1::class)
 Route::apiResource('v1/horarios', HorarioV1::class)
       ->only(['index','show', 'destroy'])
       ->middleware('auth:sanctum');
+
 Route::post('login', [App\Http\Controllers\Api\LoginController::class, 'login']);
