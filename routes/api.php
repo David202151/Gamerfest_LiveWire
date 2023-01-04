@@ -9,6 +9,8 @@ use App\Http\Controllers\Api\V1\CategoriaController as CategoriaV1;
 use App\Http\Controllers\Api\V1\InsgrupaleController as InsgrupaleV1;
 use App\Http\Controllers\Api\V1\EquipoController as EquipoV1;
 use App\Http\Controllers\Api\V1\AulaController as AulaV1;
+use App\Http\Controllers\Api\V1\EventoController as EventoV1;
+use App\Http\Controllers\Api\V1\HorarioController as HorarioV1;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -49,4 +51,11 @@ Route::apiResource('v1/aulas', AulaV1::class)
       ->only(['index','show', 'destroy'])
       ->middleware('auth:sanctum');
 
+Route::apiResource('v1/eventos', EventoV1::class)
+      ->only(['index','show', 'destroy'])
+      ->middleware('auth:sanctum');
+
+Route::apiResource('v1/horarios', HorarioV1::class)
+      ->only(['index','show', 'destroy'])
+      ->middleware('auth:sanctum');
 Route::post('login', [App\Http\Controllers\Api\LoginController::class, 'login']);
