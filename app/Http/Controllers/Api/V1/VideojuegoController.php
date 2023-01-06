@@ -16,7 +16,10 @@ class VideojuegoController extends Controller
      */
     public function index()
     {
-        return VideojuegoResource::collection (Videojuego::latest()->paginate());
+        return VideojuegoResource::collection (Videojuego::select('categorias.nombre as nombre_categorias','videojuegos.nombre','videojuegos.precio','videojuegos.descripcion')
+        -> join('categorias','videojuegos.id_categoria','=','categorias.id')
+        -> get()
+        );
     }
 
 
