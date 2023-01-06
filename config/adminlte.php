@@ -252,7 +252,7 @@ return [
     |
     */
 
-    'use_route_url' => false,
+    'use_route_url' => true,
     'dashboard_url' => 'home',
     'logout_url' => 'logout',
     'login_url' => 'login',
@@ -310,12 +310,6 @@ return [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
-        ],
-        [
-            'text'        => 'Dashboard',
-            'url'         => 'http://127.0.0.1:8000/home',
-            'icon'        => 'fa-solid fa-gauge',
-            
         ],
         [
             'text'        => 'Videojuegos',

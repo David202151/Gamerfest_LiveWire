@@ -216,7 +216,7 @@
                 <h5 class="card-title">Ubicación</h5>
                 <img class="card-img-top" src="imagenes/Ubicacion-gamer-fest.png" alt="Card image cap">
                 <br>
-                <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977" class="btn btn-primary">+ info</a>
+                <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977" class="btn btn-primary" target="_blank">+ info</a>
             </div>
             </div>
             <div class="card col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0" style="width: 18rem;">
@@ -236,17 +236,10 @@
     </div>
     <div class="col " >
     <img src="imagenes/home.png" alt="" width="30" height="30">
-       <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977">Ubicación Gamer Fest</a>
+       <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977" target="_blank">Ubicación Gamer Fest</a>
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
 
 
     </div>
