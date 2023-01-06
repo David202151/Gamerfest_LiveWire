@@ -15,8 +15,8 @@ class HorarioResource extends JsonResource
     public function toArray($request)
     {
         return[
-            'id_videjuegos' => $this->id_videjuegos,
-            'id_aulas' => $this->id_aulas,
+            'videjuegos' => $this->nombre,
+            'aulas' => $this->nombre_aula,
             'tiempo_inicio' => $this->tiempo_inicio,
             'tiempo_fin' => $this->tiempo_fin,
             'fecha' => $this->fecha,

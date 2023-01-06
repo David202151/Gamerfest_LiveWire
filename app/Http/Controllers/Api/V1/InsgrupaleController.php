@@ -17,7 +17,14 @@ class InsgrupaleController extends Controller
      */
     public function index()
     {
-        return InsgrupaleResource::collection (Insgrupale::latest()->paginate());
+        return InsgrupaleResource::collection (Insgrupale::select(
+            'jugadores.nombre', 'equipos.nombre as nombre_equipos', 'videojuegos.nombre as nombre_videojuegos',
+            'insgrupales.participantes', 'insgrupales.observaciones')
+            -> join('jugadores', 'insgrupales.id_jugadores', '=', 'jugadores.id')
+            -> join('equipos', 'insgrupales.id_equipos', '=', 'equipos.id')
+            -> join('videojuegos', 'insgrupales.id_videjuegos', '=', 'videojuegos.id')
+            ->get()
+        );
     }
 
 

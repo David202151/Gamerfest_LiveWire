@@ -16,7 +16,10 @@ class EventoController extends Controller
      */
     public function index()
     {
-        return EventoResource::collection (Evento::latest()->paginate());
+        return EventoResource::collection (Evento::select('eventos.nombre as nombre_evento','eventos.fecha', 
+        'aulas.nombre','eventos.descripcion')
+    -> join('aulas', 'eventos.id_aulas', '=', 'id_aulas')
+    -> get());
     }
 
     
