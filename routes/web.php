@@ -41,3 +41,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 	Route::view('aulas', 'livewire.aulas.index')->middleware('auth');
 	Route::view('videojuegos', 'livewire.videojuegos.index')->middleware('auth');
 	Route::view('categorias', 'livewire.categorias.index')->middleware('auth');
+	Route::view('reporteind', 'livewire.reporteinscripcionind.index')->middleware('auth');
+	Route::view('reportegru', 'livewire.reporteinscripcciongru.index')->middleware('auth');
+	Route::view('recaudacionind', 'livewire.recaudacionind.index')->middleware('auth');
+	Route::view('recaudaciongru', 'livewire.recaudaciongru.index')->middleware('auth');
+	Route::view('reportehorarios', 'livewire.reportehorarios.index')->middleware('auth');
+	Route::get('/pdf-horario',[App\Http\Livewire\ReporteHorarios::class,'pdf'])->name('descargarPDF-Hor');
+	Route::get('/pdf-jugadorind',[App\Http\Livewire\ReporteInsIndividual::class,'pdf'])->name('descargarPDF-JugI');
+	Route::get('/pdf-jugadorgru',[App\Http\Livewire\ReporteInsGrupal::class,'pdf'])->name('descargarPDF-JugG');
+	Route::get('/pdf-recaudacionind',[App\Http\Livewire\ReporteRecaudacionInd::class,'pdf'])->name('descargarPDF-RecI');
+	Route::get('/pdf-recaudaciongru',[App\Http\Livewire\ReporteRecaudacionGru::class,'pdf'])->name('descargarPDF-RecG');

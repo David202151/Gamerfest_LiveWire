@@ -313,51 +313,84 @@ return [
         ],
         [
             'text'        => 'Dashboard',
-            'url'         => 'http://127.0.0.1:8000/home',
+            'url'         => '/home',
             'icon'        => 'fa-solid fa-gauge',
             
         ],
         [
             'text'        => 'Videojuegos',
-            'url'         => 'http://127.0.0.1:8000/videojuegos',
+            'url'         => '/videojuegos',
             'icon'        => 'fas fa-fw fa-gamepad',
         ],
         [
             'text'        => 'Horarios',
-            'url'         => 'http://127.0.0.1:8000/horarios',
+            'url'         => '/horarios',
             'icon'        => 'fas fa-fw fa-history',
         ],
         [
             'text'        => 'Aulas',
-            'url'         => 'http://127.0.0.1:8000/aulas',
+            'url'         => '/aulas',
             'icon'        => 'fa fa-home fa-fw',
         ],
         [
             'text'        => 'Eventos',
-            'url'         => 'http://127.0.0.1:8000/eventos',
+            'url'         => '/eventos',
             'icon'        => 'fas fa-fw fa-pen',
         ],
         [
             'text'        => 'Jugadores',
-            'url'         => 'http://127.0.0.1:8000/jugadores',
+            'url'         => '/jugadores',
             'icon'        => 'fas fa-fw fa-users',
         ],
         [
             'text'        => 'Inscripcion Grupal',
-            'url'         => 'http://127.0.0.1:8000/insgrupales',
+            'url'         => '/insgrupales',
             'icon'        => 'fas fa-fw fa-address-card',
         ],
         [
             'text'        => 'Inscripcion Individual',
-            'url'         => 'http://127.0.0.1:8000/insinvidviduales',
+            'url'         => '/insinvidviduales',
             'icon'        => 'fas fa-fw fa-address-book',
         ],
         [
             'text'        => 'Equipos',
-            'url'         => 'http://127.0.0.1:8000/equipos',
+            'url'         => '/equipos',
             'icon'        => 'fas fa-fw fa-user-circle',
         ],
-        
+        ['header' => 'Reportes'],
+        [
+            'text'       => 'Generar Reporte',
+            'icon'       => 'fas fa-file mr-1',
+            'url'        => '/reporte',
+            'submenu' => [
+
+                ['header' => 'Listado de Jugadores'],
+                [
+                    'text' => 'Juego individual',
+                    'url'  => '/reporteind',
+                ],
+                [
+                    'text' => 'Juego grupal',
+                    'url'  => '/reportegru',
+                ],
+                ['header' => 'Recaudación'],
+                [
+                    'text' => 'Juegos individuales',
+                    'url'  => '/recaudacionind',
+                ],
+                [
+                    'text' => 'Juego grupales',
+                    'url'  => '/recaudaciongru',
+                    
+                ],
+                ['header' => 'Cronogramas'],
+                [
+                    'text' => 'Actividades del día',
+                    'url'  => '/reportehorarios',
+                    
+                ]
+             ]  
+        ],
         
     ],
 
