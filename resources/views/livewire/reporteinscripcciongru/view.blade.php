@@ -7,15 +7,14 @@
 <div class="container-fluid">
    <div class="row">
       <div class="col mt-4 mb-4">
-         <h2 class="text-center"><b>Listado de jugadores</b></h2>
+         <h2 class="text-center"><b>Listado de jugadores en juegos grupales</b></h2>
       </div>
    </div>
    <div class="row">
       <div class="col">
-         <button wire:click.prevent="getJugadores()" class="btn btn-danger">Generar</button>
       </div>
       <div class="col">
-         <a href="{{ route('descargarPDF-JugI')}}" target="_blank" class="btn btn-success" style="float: right;">
+         <a href="{{ route('descargarPDF-JugG')}}" target="_blank" class="btn btn-success" style="float: right;">
             <span>Exportar</span>
          </a>
       </div>
@@ -23,16 +22,17 @@
    <div class="row">
       <div class="col mt-4 mb-4">
          <h3>Lista por Videojuego</h3>
+         
       </div>
    </div>
    <div class="row">
       @if($list)
       <table class="table table-bordered">
-         
          <thead>
             <tr class="light bg-dark">
                <th scope="col">Jugador</th>
                <th scope="col">Videojuego</th>
+               <th scope="col">Equipo</th>
                <th scope="col">Observación</th>
             </tr>
          </thead>
@@ -40,6 +40,7 @@
             @for($i = 0 ; $i<count($list) ; $i++) <tr>
                <td class="text-center">{{ $list[$i]['jugador']}}</td>
                <td class="text-center">{{ $list[$i]['videojuego']}}</td>
+               <td class="text-center">{{ $list[$i]['equipo']}}</td>
                <td class="text-center">{{ $list[$i]['observacion']}}</td>
                </tr>
                @endfor

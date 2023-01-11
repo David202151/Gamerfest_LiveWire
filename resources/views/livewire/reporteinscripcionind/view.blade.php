@@ -12,11 +12,11 @@
    </div>
    <div class="row">
       <div class="col">
-         <button wire:click.prevent="getJugadores()" class="btn btn-danger">Generar</button>
+        
       </div>
       <div class="col">
          <a href="{{ route('descargarPDF-JugI')}}" target="_blank" class="btn btn-success" style="float: right;">
-            <span>Exportar</span>
+            <span>Exportar PDF</span>
          </a>
       </div>
    </div>

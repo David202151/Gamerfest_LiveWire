@@ -1,3 +1,3 @@
 <div>
-    {{-- Do your work, then step back. --}}
+    {{-- Care about people's approval and you will be their prisoner. --}}
 </div>

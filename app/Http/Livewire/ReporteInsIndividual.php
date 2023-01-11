@@ -13,9 +13,11 @@ class ReporteInsIndividual extends Component
 {
 
     public $list; 
+    
     public function render()
     {
-        return view('livewire.reporteinscripcionind.view');
+        $list = $this -> getJugadores();
+        return view('livewire.reporteinscripcionind.view',$list);
     }
 
     public function pdf()

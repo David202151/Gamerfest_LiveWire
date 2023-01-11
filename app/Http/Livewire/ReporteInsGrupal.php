@@ -2,28 +2,29 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Insgrupale;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 use Barryvdh\DomPDF\Facade\Pdf;
-use App\Models\Insgrupale;
+use App\Models\Insinvidviduale;
 use App\Models\Jugadore;
 use App\Models\Videojuego;
-
-class ReporteInsIndividual extends Component
+class ReporteInsGrupal extends Component
 {
-
-    public $list; 
+    public $list;
     public function render()
     {
-        return view('livewire.reporteinscripcionind.view');
+        $list = $this -> getJugadores();
+        return view('livewire.reporteinscripcciongru.view',$list);
     }
 
     public function pdf()
     {
         $list=$this->getJugadores();
-        $pdf = PDF::loadView('livewire.reporteinscripciongru.pdf',compact('list'));
+        $pdf = PDF::loadView('livewire.reporteinscripcciongru.pdf',compact('list'));
         return $pdf->stream('REPORTE-JUGADORES'.date('Y-m-d').'.pdf');
     }
+    
     public function getJugadores(){
 
         $inscripciones = Insgrupale::all();
@@ -33,14 +34,14 @@ class ReporteInsIndividual extends Component
             array_push($list,
             [
                 'jugador'=>$inscripcion->jugadore->nombre,
+                'equipo' =>$inscripcion->equipo->nombre,
                 'videojuego'=>$inscripcion->videojuego->nombre,
                 'observacion'=>$inscripcion->observaciones,
             ]);
-        }
+        } 
         
         $this->list = $list;
         return $list;
-        dd($list);
 
     }
 }
