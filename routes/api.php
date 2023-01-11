@@ -61,6 +61,7 @@ Route::apiResource('v1/horarios', HorarioV1::class)
       ->only(['index','show', 'destroy'])
       ->middleware('auth:sanctum');
 
+
 Route::apiResource('v1/insinvidviduales', InsinvidvidualeV1::class)
       ->only(['index','show', 'destroy'])
       ->middleware('auth:sanctum');

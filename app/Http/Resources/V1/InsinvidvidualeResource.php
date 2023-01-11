@@ -15,8 +15,8 @@ class InsinvidvidualeResource extends JsonResource
     public function toArray($request)
     {
         return[
-            'id_videjuegos' => $this->id_videjuegos,
-            'id_jugadores' => $this->id_jugadores,
+            'id_videjuegos' => $this->nombre,
+            'id_jugadores' => $this->nombre_jugador,
             'observaciones' => $this->observaciones,
         ];
     }

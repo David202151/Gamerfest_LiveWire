@@ -15,7 +15,7 @@ class VideojuegoResource extends JsonResource
     public function toArray($request)
     {
         return[
-            'id_categoria' => $this->id_categoria,
+            'id_categoria' => $this->nombre_categorias,
             'nombre' => $this->nombre,
             'precio' => $this->precio,
             'descripcion' => $this->descripcion,

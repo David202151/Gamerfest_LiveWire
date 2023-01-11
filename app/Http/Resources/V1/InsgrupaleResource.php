@@ -15,9 +15,9 @@ class InsgrupaleResource extends JsonResource
     public function toArray($request)
     {
         return[
-            'id_jugadores' => $this->id_jugadores,
-            'id_equipos' => $this->id_equipos,
-            'id_videjuegos' => $this->id_videjuegos,
+            'jugadores' => $this->nombre,
+            'equipos' => $this->nombre_equipos,
+            'videjuegos' => $this->nombre_videojuegos,
             'participantes' => $this->participantes,
             'observaciones' => $this->observaciones
         ];

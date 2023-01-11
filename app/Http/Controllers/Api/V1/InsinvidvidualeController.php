@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Models\Insinvidviduale;
 use Illuminate\Http\Request;
-
 use App\Http\Resources\V1\InsinvidvidualeResource;
 
 class InsinvidvidualeController extends Controller
@@ -17,7 +16,11 @@ class InsinvidvidualeController extends Controller
      */
     public function index()
     {
-        return InsinvidvidualeResource::collection (Insinvidviduale::latest()->paginate());
+        return InsinvidvidualeResource::collection (Insinvidviduale::select('videojuegos.nombre','jugadores.nombre as nombre_jugador','insinvidviduales.observaciones')
+        -> join('videojuegos','insinvidviduales.id_videjuegos','=','videojuegos.id')
+        -> join('jugadores','insinvidviduales.id_jugadores','=','jugadores.id')   
+        -> get()
+        );
     }
 
     /**
