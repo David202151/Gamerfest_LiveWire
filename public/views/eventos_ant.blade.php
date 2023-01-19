@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Gamer Fest</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -28,34 +28,15 @@
         <div>
         <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <img src="imagenes/gamerfest.png" width="100" heigth="60">
+            <img src="../imagenes/gamerfest.png" width="100" heigth="60">
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul>
                 <li class="nav-item">
-                <a href="{{ route('login') }}"><h5 class="text-white">Log in</h5></a>
+                <a class="nav-link" href="javascript:history.back()"> <h5 class="text-white">Home </h3> <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            <ul>
-                <li class="nav-item">
-                <a href="{{ route('register') }}"><h5 class="text-white">Register</h5></a>
-                </li>
-            </ul>
-            <ul>
-                <li class="nav-item">
-                <a href="#"><h5 class="text-white">Productos</h5></a>
-                </li>
-            </ul>
-            <ul>
-                <li class="nav-item">
-                <a href="{{ url('views/eventos_ant.blade.php') }}"><h5 class="text-white">Eventos anteriores</h5></a>
-                </li>
-            </ul>
-            <ul>
-                <li class="nav-item">
-                <a href="#"><h5 class="text-white">Normativa del evento</h5></a>
-                </li>
-            </ul>
+            
             </div>
         </div>
         </nav>
@@ -63,76 +44,61 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div>
-                    <center><img src="imagenes/gamerfest.png" width="160" heigth="110"></center>
+                    <center><img src="../imagenes/gamerfest.png" width="160" heigth="110"></center>
 
                 <div class="mt-8  dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md" style="background-color: #5C0A71;">
 
 
-                            
+                    
 
                         <div class="container text-center" >
                             <div class="row">
-                                <div class="col">
+                            <h1 class="text-white">AKI SE EDITA !!!!!!</h1>
 
-                                <center>
-                        <div class="grid grid-cols-1 md" >
-                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                    <img src="imagenes/lol.jpg" class="d-block w-100" alt="...">
+                            <div class="container text-center">
+                                <div class="row align-items-start">
+                                    <div class="col">
+                                    One of three columns
                                     </div>
-                                    <div class="carousel-item">
-                                    <img src="imagenes/mario.jpg" class="d-block w-100" alt="...">
+                                    <div class="col">
+                                    One of three columns
                                     </div>
-                                    <div class="carousel-item">
-                                    <img src="imagenes/valorant.jpg" class="d-block w-100" alt="...">
+                                    <div class="col">
+                                    One of three columns
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                    One of three columns
+                                    </div>
+                                    <div class="col">
+                                    One of three columns
+                                    </div>
+                                    <div class="col">
+                                    One of three columns
+                                    </div>
+                                </div>
+                                <div class="row align-items-end">
+                                    <div class="col">
+                                    One of three columns
+                                    </div>
+                                    <div class="col">
+                                    One of three columns
+                                    </div>
+                                    <div class="col">
+                                    One of three columns
                                     </div>
                                 </div>
                                 </div>
-                                </div>
-                                </center>
 
-                                </div>
-                                <div class="col order-5">
 
-                                <center>
-                        <div class="grid grid-cols-1 md" >
-                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                    <img src="imagenes/mario.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src="imagenes/valorant.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src="imagenes/lol.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                                </div>
-                                </div>
-                                </center>
-                                </div>
-                                <div class="col order-1">
-                                <center>
-                        <div class="grid grid-cols-1 md" >
-                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                    <img src="imagenes/valorant.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src="imagenes/lol.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src="imagenes/mario.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                                </div>
-                                </div>
-                                </center>
-                                </div>
+
+
+
+
+
+
 
                             </div>
                         </div>  
@@ -182,15 +148,15 @@
     <div class="col order-7">
     </div>
     <div class="col order-8">
-    <a  href="https://instagram.com/gamerfest.ec?igshid=YmMyMTA2M2Y=" target="_blank"><img src="imagenes/instagram.png" alt="" width="45" height="45"></a>
+    <a  href="https://instagram.com/gamerfest.ec?igshid=YmMyMTA2M2Y=" target="_blank"><img src="../imagenes/instagram.png" alt="" width="45" height="45"></a>
     <p>instagram</p>
     </div>
     <div class="col order-9">
-    <a  href="https://ne-np.facebook.com/gamerfest.ec/" target="_blank"><img src="imagenes/facebook.png" alt="" width="45" height="45"></a>
+    <a  href="https://ne-np.facebook.com/gamerfest.ec/" target="_blank"><img src="../imagenes/facebook.png" alt="" width="45" height="45"></a>
     <p>facebook</p>
     </div>
     <div class="col order-12">
-    <a  href="https://ne-np.facebook.com/gamerfest.ec/" target="_blank"><img src="imagenes/google.png" alt="" width="45" height="45"></a>
+    <a  href="https://ne-np.facebook.com/gamerfest.ec/" target="_blank"><img src="../imagenes/google.png" alt="" width="45" height="45"></a>
     <p>google</p>
     </div>
   </div>
@@ -227,29 +193,29 @@
             
             <div class="card-body">
                 <h5 class="card-title">Ubicación</h5>
-                <img class="card-img-top" src="imagenes/Ubicacion-gamer-fest.png" alt="Card image cap">
+                <img class="card-img-top" src="../imagenes/Ubicacion-gamer-fest.png" alt="Card image cap">
                 <br>
                 <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977" class="btn btn-primary" target="_blank">+ info</a>
             </div>
             </div>
             <div class="card col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0" style="width: 18rem;">
             <br>
-                <img class="card-img-top" src="imagenes/Jugger.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../imagenes/Jugger.jpg" alt="Card image cap">
             </div>
     </div>
     <div class="row mx-5 my-5">
     <div class="col" >
              
-        <img src="imagenes/sobre.png" alt="" width="30" height="30">
+        <img src="../imagenes/sobre.png" alt="" width="30" height="30">
               gameFest@info.com 
     </div>
     <div class="col mx-2" >
-       <img src="imagenes/telefono.png" alt="" width="30" height="30"> 
+       <img src="../imagenes/telefono.png" alt="" width="30" height="30"> 
       (578)768-344
     </div>
     <br><br>
     <div class="col " >
-    <img src="imagenes/home.png" alt="" width="30" height="30">
+    <img src="../imagenes/home.png" alt="" width="30" height="30">
        <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977" target="_blank">Ubicación Gamer Fest</a>
     </div>
   </div>
