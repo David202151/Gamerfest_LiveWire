@@ -26,19 +26,40 @@
     
     <body class="antialiased" >
         <div>
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="btn btn-secondary" href="{{ route('login') }}" role="button">Home</a>
-                    @else
-                        <a class="btn btn-secondary" href="{{ route('login') }}" role="button">Log in</a>
-
-                        @if (Route::has('register'))
-                        <a class="btn btn-secondary" href="{{ route('register') }}" role="button">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+        <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <img src="imagenes/gamerfest.png" width="100" heigth="60">
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul>
+                <li class="nav-item">
+                <a href="{{ route('login') }}"><h5 class="text-white">Log in</h5></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="nav-item">
+                <a href="{{ route('register') }}"><h5 class="text-white">Register</h5></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="nav-item">
+                <a href="#"><h5 class="text-white">Productos</h5></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="nav-item">
+                <a href="#"><h5 class="text-white">Eventos anteriores</h5></a>
+                </li>
+            </ul>
+            <ul>
+                <li class="nav-item">
+                <a href="#"><h5 class="text-white">Normativa del evento</h5></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+            
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div>
@@ -168,14 +189,6 @@
     <a  href="https://ne-np.facebook.com/gamerfest.ec/" target="_blank"><img src="imagenes/facebook.png" alt="" width="45" height="45"></a>
     <p>facebook</p>
     </div>
-    <div class="col order-10">
-    <a  href="https://ne-np.facebook.com/gamerfest.ec/" target="_blank"><img src="imagenes/twitter.png" alt="" width="45" height="45"></a>
-    <p>twitter</p>
-    </div>
-    <div class="col order-11">
-    <a  href="https://ne-np.facebook.com/gamerfest.ec/" target="_blank"><img src="imagenes/youtube.png" alt="" width="45" height="45"></a>
-    <p>youtube</p>
-    </div>
     <div class="col order-12">
     <a  href="https://ne-np.facebook.com/gamerfest.ec/" target="_blank"><img src="imagenes/google.png" alt="" width="45" height="45"></a>
     <p>google</p>
@@ -234,6 +247,7 @@
        <img src="imagenes/telefono.png" alt="" width="30" height="30"> 
       (578)768-344
     </div>
+    <br><br>
     <div class="col " >
     <img src="imagenes/home.png" alt="" width="30" height="30">
        <a href="https://www.google.com/maps/place/ESPE+-+Campus+Belisario+Quevedo/@-0.9988703,-78.5882864,17z/data=!3m1!4b1!4m5!3m4!1s0x91d4639e3fb9755f:0x22fe7f63301b5fee!8m2!3d-0.9988703!4d-78.5860977" target="_blank">Ubicación Gamer Fest</a>
