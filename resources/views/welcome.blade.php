@@ -53,7 +53,7 @@
             </ul>
             <ul>
                 <li class="nav-item">
-                <a href=""><h5 class="text-white">Normativa del evento</h5></a>
+                <a href="{{ url('views/normativa.blade.php') }}"><h5 class="text-white">Normativa del evento</h5></a>
                 </li>
             </ul>
             </div>
