@@ -42,13 +42,8 @@
                 </li>
             </ul>
             <ul>
-<<<<<<< HEAD
-                <li class="nav-link">
-                <a href="#"><h5 class="text-white">Productos</h5></a>
-=======
                 <li class="nav-item">
                 <a href="{{ url('views/productos.blade.php') }}"><h5 class="text-white">Productos</h5></a>
->>>>>>> main
                 </li>
             </ul>
             <ul>
@@ -57,13 +52,9 @@
                 </li>
             </ul>
             <ul>
-<<<<<<< HEAD
-                <li class="nav-link">
-                <a href="#"><h5 class="text-white">Normativa del evento</h5></a>
-=======
+
                 <li class="nav-item">
                 <a href="{{ url('views/normativa.blade.php') }}"><h5 class="text-white">Normativa del evento</h5></a>
->>>>>>> main
                 </li>
             </ul>
             </div>
