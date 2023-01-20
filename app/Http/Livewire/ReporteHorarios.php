@@ -2,6 +2,8 @@
 
 namespace App\Http\Livewire;
 
+use App\Exports\HorarioExport;
+use Maatwebsite\Excel\Facades\Excel;
 use Livewire\Component;
 use App\Models\Horario;
 use App\Models\Aula;
@@ -16,6 +18,11 @@ class ReporteHorarios extends Component
     {
         $fecha = '%'.$this->fecha .'%';
         return view('livewire.reportehorarios.view');
+    }
+
+    public function excel()
+    {
+        return Excel::download(new HorarioExport, 'horarios.xlsx');
     }
     public function pdf()
     {

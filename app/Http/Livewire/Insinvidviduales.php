@@ -23,9 +23,11 @@ class Insinvidviduales extends Component
         $videojuego = Videojuego::pluck('nombre', 'id');
         $jugador = Jugadore::pluck('nombre', 'id');
 		$keyWord = '%'.$this->keyWord .'%';
-        return view('livewire.insinvidviduales.view',['videojuego'=>$videojuego, 'jugador'=>$jugador], [
+        return view('livewire.insinvidviduales.view',['videojuego'=>$videojuego, 'jugador'=>$jugador],[
             'insinvidviduales' => Insinvidviduale::latest()
-						->orWhere('id_videjuegos', 'LIKE', $keyWord)
+            ->whereHas('videojuego', function($query) use ($keyWord) {
+                $query->where('nombre', 'like', $keyWord);
+             })
 						->orWhere('id_jugadores', 'LIKE', $keyWord)
 						->orWhere('observaciones', 'LIKE', $keyWord)
 						->paginate(10),

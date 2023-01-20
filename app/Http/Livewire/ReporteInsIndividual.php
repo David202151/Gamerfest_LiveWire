@@ -2,7 +2,9 @@
 
 namespace App\Http\Livewire;
 
-use Illuminate\Support\Facades\DB;
+use App\Exports\InscripccionesindExport;
+use Maatwebsite\Excel\Facades\Excel;
+use Livewire\WithPagination;
 use Livewire\Component;
 use Barryvdh\DomPDF\Facade\Pdf;
 use App\Models\Insinvidviduale;
@@ -12,13 +14,31 @@ use App\Models\Videojuego;
 class ReporteInsIndividual extends Component
 {
 
-    public $list; 
+    use WithPagination;
+    public $list, $keyWord, $id_videjuegos, $id_jugadores, $observaciones; 
+    public $updateMode = false;
     
     public function render()
     {
+        
         $list = $this -> getJugadores();
-        return view('livewire.reporteinscripcionind.view',$list);
+        $videojuego = Videojuego::pluck('nombre', 'id');
+        $jugador = Jugadore::pluck('nombre', 'id');
+		$keyWord = '%'.$this->keyWord .'%';
+        return view('livewire.reporteinscripcionind.view',$list,['videojuego'=>$videojuego, 'jugador'=>$jugador], [
+            'insinvidviduales' => Insinvidviduale::latest()
+						->whereHas('videojuego', function($query) use ($keyWord) {
+                            $query->where('nombre', 'like', $keyWord);
+                         })
+						->paginate(10),
+        ]);
     }
+
+    public function excel()
+    {
+        return Excel::download(new InscripccionesindExport, 'inscripccionesind.xlsx');
+    }
+
 
     public function pdf()
     {
