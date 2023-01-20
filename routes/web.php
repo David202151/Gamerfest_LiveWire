@@ -51,3 +51,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 	Route::get('/pdf-jugadorgru',[App\Http\Livewire\ReporteInsGrupal::class,'pdf'])->name('descargarPDF-JugG');
 	Route::get('/pdf-recaudacionind',[App\Http\Livewire\ReporteRecaudacionInd::class,'pdf'])->name('descargarPDF-RecI');
 	Route::get('/pdf-recaudaciongru',[App\Http\Livewire\ReporteRecaudacionGru::class,'pdf'])->name('descargarPDF-RecG');
+	Route::get('/xml-horario',[App\Http\Livewire\ReporteHorarios::class,'excel'])->name('descargarXML-Hor');
+	Route::get('/xml-jugadorind',[App\Http\Livewire\ReporteInsIndividual::class,'excel'])->name('descargarXML-JugI');
+	Route::get('/xml-jugadorgru',[App\Http\Livewire\ReporteInsGrupal::class,'excel'])->name('descargarXML-JugG');
+	Route::get('/xml-recaudacionind',[App\Http\Livewire\ReporteRecaudacionInd::class,'excel'])->name('descargarXML-RecI');
+	Route::get('/xml-recaudaciongru',[App\Http\Livewire\ReporteRecaudacionGru::class,'excel'])->name('descargarXML-RecG');

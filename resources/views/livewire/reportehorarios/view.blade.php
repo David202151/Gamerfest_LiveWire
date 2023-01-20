@@ -16,8 +16,12 @@
          <button wire:click.prevent="getHorarios('{{$fecha}}')" class="btn btn-danger">Generar</button>
       </div>
       <div class="col">
-         <a href="{{ route('descargarPDF-Hor',['fecha' => $fecha])}}" target="_blank" class="btn btn-success" style="float: right;">
-            <span>Exportar</span>
+         <a href="{{ route('descargarPDF-Hor',['fecha' => $fecha])}}" target="_blank" class="btn btn-danger" style="float: right;">
+            <span>Exportar .PDF</span>
+            <i class="ion-ios-upload-outline p-1"></i>
+         </a>
+         <a href="{{ route('descargarXML-Hor')}}" target="_blank" class="btn btn-success" style="float: right;">
+            <span>Exportar .CVS</span>
             <i class="ion-ios-upload-outline p-1"></i>
          </a>
       </div>

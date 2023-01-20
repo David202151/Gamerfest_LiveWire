@@ -25,8 +25,6 @@ class ReporteRecaudacionGru extends Component
         $pdf = PDF::loadView('livewire.recaudacionGru.pdf',compact('list','total'));
         return $pdf->stream('REPORTE-Recaudacion'.date('Y-m-d').'.pdf');
 
-        
-
     }
     
     public function getRecaudacion(){

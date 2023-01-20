@@ -12,11 +12,18 @@
    </div>
    <div class="row">
       <div class="col">
-        
       </div>
       <div class="col">
-         <a href="{{ route('descargarPDF-JugI')}}" target="_blank" class="btn btn-success" style="float: right;">
-            <span>Exportar PDF</span>
+
+      </div>
+      <div class="col">
+         <a href="{{ route('descargarPDF-JugI')}}" target="_blank" class="btn btn-danger" style="float: right;">
+            <span>Exportar .PDF</span>
+            <i class="ion-ios-upload-outline p-1"></i>
+         </a>
+         <a href="{{ route('descargarXML-JugI')}}" target="_blank" class="btn btn-success" style="float: right;">
+            <span>Exportar .CVS</span>
+            <i class="ion-ios-upload-outline p-1"></i>
          </a>
       </div>
    </div>
@@ -25,35 +32,34 @@
          <h3>Lista por Videojuego</h3>
       </div>
    </div>
-   <div class="row">
-      @if($list)
+   <div class="row table-responsive">
       <table class="table table-bordered">
-         
          <thead>
             <tr class="light bg-dark">
                <th scope="col">Jugador</th>
                <th scope="col">Videojuego</th>
                <th scope="col">Observación</th>
             </tr>
-         </thead>
-         <tbody>
-            @for($i = 0 ; $i<count($list) ; $i++) <tr>
-               <td class="text-center">{{ $list[$i]['jugador']}}</td>
-               <td class="text-center">{{ $list[$i]['videojuego']}}</td>
-               <td class="text-center">{{ $list[$i]['observacion']}}</td>
-               </tr>
-               @endfor
-         </tbody>
+            </thead>
+            <tbody>
+               @for($i = 0 ; $i<count($list) ; $i++) <tr>
+                  <td class="text-center">{{ $list[$i]['jugador']}}</td>
+                  <td class="text-center">{{ $list[$i]['videojuego']}}</td>
+                  <td class="text-center">{{ $list[$i]['observacion']}}</td>
+                  </tr>
+                  @endfor
+            </tbody>
       </table>
-      @endif
+      
    </div>
+</div>
 
-   @endsection
+@endsection
 
-   @section('css')
+@section('css')
 
-   @stop
+@stop
 
-   @section('js')
+@section('js')
 
-   @endsection
+@endsection

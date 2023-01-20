@@ -10,8 +10,8 @@
          
       </div>
       <div class="col">
-         <a href="{{ route('descargarPDF-RecG')}}" target="_blank" class="btn btn-success" style="float: right;">
-            <span>Exportar PDF</span>
+         <a href="{{ route('descargarPDF-RecG')}}" target="_blank" class="btn btn-danger" style="float: right;">
+            <span>Exportar .PDF</span>
             <i class="ion-ios-upload-outline p-1"></i>
          </a>
       </div>
