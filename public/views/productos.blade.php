@@ -54,75 +54,66 @@
 
                         <div class="container text-center" >
                             <div class="row">
-                            <h1 class="text-white">PRODUCTOS</h1>
-                            <div class="container">
-                            <div class="row">
-                                <div class="col-6 col-sm-4">
-                                    <div class="card" style="width: 18rem;">
-                                            <img class="card-img-top" src="../imagenes/Imagen1.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <p class="card-text text-primary ">Mascaras Gamer Fest </p>
-                                            <p class="card-text bg-info">Valor 7 dolares</p>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                            <img class="card-img-top" src="../imagenes/Imagen2.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <p class="card-text text-primary">Camiseta Gamer Fest </p>
-                                            <p class="card-text bg-info">Valor 12 dolares</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 col-sm-4">
-                                <div class="card" style="width: 12rem;">
-                                            <img class="card-img-top" src="../imagenes/Imagen3.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <p class="card-text text-primary">Camiseta Gamer Fest </p>
-                                            <p class="card-text bg-info">Valor 10 dolares</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
 
-                                <!-- Obligar a las siguientes columnas a pasar a una nueva línea -->
-                                <div class="w-100"></div>
-                        <br>
-                                <div class="col-2 col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                            <img class="card-img-top" src="../imagenes/Imagen 5 .jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <p class="card-text text-primary">Teclado gaming Trust: Ziva 4-in-1 Gaming Bundle</p>
-                                            <p class="card-text bg-info">Valor 15 dolares</p>
-                                            
-                                        </div>
+                            <div class="row">
+                            <div class="card-group px=5">
+                                <div class="card">
+                                    <img class="card-img-top" src="../imagenes/Imagen1.jpg" alt="Card image cap" height="270">
+                                    <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger"><strong>Mascaras Gamer</strong> </h5>
+                                    <p class="card-text font-weight-normal"><strong>Valor 7 $</strong></p>
                                     </div>
                                 </div>
-                                <div class="col-6 col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                            <img class="card-img-top" src="../imagenes/Imagen 6.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <p class="card-text text-primary">Almohada de la poderisima carrera de software</p>
-                                            <p class="card-text bg-info">Valor 5 dolares</p>
-                                            
-                                        </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../imagenes/Imagen2.jpg" alt="Card image cap" height="270">
+                                    <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger"><strong>Camiseta Gamer Fest Blanca/Azul</strong> </h5>
+                                    <p class="card-text font-weight-normal"><strong>Valor 12 $</strong></p>
+                                    
                                     </div>
                                 </div>
-                                <div class="col-6 col-sm-4">
-                                <div class="card" style="width: 18rem;">
-                                            <img class="card-img-top" src="../imagenes/Imagen7.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <p class="card-text text-primary">Teclado gamer 4 en 1 </p>
-                                            <p class="card-text bg-info">Valor 15 </p>
-                                            
-                                        </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../imagenes/Imagen3.jpg" alt="Card image cap" height="270">
+                                    <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger"><strong>Camiseta Gamer Fest Alternativa</strong> </h5>
+                                    <p class="card-text font-weight-normal"><strong>Valor 15 $</strong></p>
                                     </div>
                                 </div>
-                                
-                                
+                                </div>
                             </div>
+
+                           
+                              <div class="row py-5">
+                              <div class="w-200"></div>
+                                <div class="card-group">
+                                <div class="card">
+                                    <img class="card-img-top" src="../imagenes/Imagen 5 .jpg" alt="Card image cap" height="270">
+                                    <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger"><strong>Teclado Gamer (Trust: Ziva 4-in-1 Gaming Bundle)</strong> </h5>
+                                    <p class="card-text font-weight-normal"><strong>Valor 15 $</strong></p>
+                                    
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../imagenes/Imagen 6.jpg" alt="Card image cap" height="270">
+                                    <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger"><strong>Almohada de la carrera de software</strong> </h5>
+                                    <p class="card-text font-weight-normal"><strong>Valor 5 $</strong></p>
+                                    
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../imagenes/Imagen7.jpg" alt="Card image cap" height="270">
+                                    <div class="card-body">
+                                    <h5 class="font-weight-bold text-danger"><strong>Teclado Gamer (4 en 1)</strong> </h5>
+                                    <p class="card-text font-weight-normal"><strong>Valor 20 $</strong></p>
+                                    </div>
+                                </div>
+                              </div>
+
+
+                                
+                                </div>
 
                             </div>
                         </div>  
