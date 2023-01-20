@@ -44,7 +44,6 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div>
-                    <center><img src="../imagenes/gamerfest.png" width="160" heigth="110"></center>
 
                 <div class="mt-8  dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md" style="background-color: #5C0A71;">
@@ -54,51 +53,68 @@
 
                         <div class="container text-center" >
                             <div class="row">
-                            <h1 class="text-white">AKI SE EDITA !!!!!!</h1>
-
+                            <h1 class="text-white"> <strong> EVENTOS ANTERIORES </strong> </h1>
+                            <br>
+                            <br>    
                             <div class="container text-center">
+                                <br><br>
                                 <div class="row align-items-start">
                                     <div class="col">
-                                    One of three columns
+
+
+                                    <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                                        <img src="../imagenes/gamerfest2017.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3 class="text-white"> <strong>Gamer Fest 2017 </strong></h3>
+                                            
+                                            <p class="text-white"> <strong>El “FESTIVAL DE VIDEOJUEGOS SOFTWARE GAMER FEST” se desarrolló los días 8 y 9 de
+                                                junio de 2017, desde las 07H00 a las 16H00 en los salones de clase del tercer piso, auditorios
+                                                y Salas de Cómputo del Bloque B del Campus General Guillermo Rodríguez Lara, de acuerdo
+                                                a la agenda anexo a este instructivo. </strong>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
                                     </div>
                                     <div class="col">
-                                    One of three columns
+
+
+                                    <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                                        <img src="../imagenes/gamerfest2018.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3 class="text-white"><strong>Gamer Fest 2018</strong></h3>
+                                            
+                                            <p class="text-white"><strong>El “FESTIVAL DE VIDEOJUEGOS SOFTWARE GAMER FEST” se desarrolló los días 6, 7 y 8
+                                                de junio de 2018, desde las 07H00 a las 16H00 en los salones de clase del tercer piso,
+                                                auditorios y Salas de Cómputo del Bloque B del Campus General Guillermo Rodríguez Lara, de
+                                                acuerdo a la agenda anexo a este instructivo.</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
                                     </div>
                                     <div class="col">
-                                    One of three columns
+
+
+                                    <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+                                        <img src="../imagenes/gamerfest2019.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <h3 class="text-white"><strong>Gamer Fest 2019</strong></h3>
+                                            
+                                            <p class="text-white"><strong>El “FESTIVAL DE VIDEOJUEGOS SOFTWARE GAMER FEST” se desarrolló los días 12,13 Y
+                                                14 de junio de 2019, desde las 07H00 a las 16H00 en los salones de clase del tercer piso,
+                                                auditorios y Salas de Cómputo del Bloque B del Campus General Guillermo Rodríguez Lara, de
+                                                acuerdo a la agenda anexo a este instructivo.</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
                                     </div>
                                 </div>
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                    One of three columns
-                                    </div>
-                                    <div class="col">
-                                    One of three columns
-                                    </div>
-                                    <div class="col">
-                                    One of three columns
-                                    </div>
-                                </div>
-                                <div class="row align-items-end">
-                                    <div class="col">
-                                    One of three columns
-                                    </div>
-                                    <div class="col">
-                                    One of three columns
-                                    </div>
-                                    <div class="col">
-                                    One of three columns
-                                    </div>
-                                </div>
-                                </div>
-
-
-
-
-
-
-
-
+                                
 
                             </div>
                         </div>  
