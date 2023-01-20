@@ -57,7 +57,7 @@
 								<h4>Recaudacion Total</h4>
 							</div>
 							<div class="text-warning text-center mt-2">
-								<h1>{{ $contar['total_recaudacion'] }}</h1>
+								<h1>{{ $contar['total_recaudacion'] }} $</h1>
 							</div>
 						</div>
 					</div>
@@ -87,7 +87,7 @@
 				<div class="card">
 					<div class="card-header d-flex justify-content-between">
 						<h3 class="card-title">Eventos a realizar</h3>
-						<a href="http://127.0.0.1:8000/eventos" class="link-success">Todos los eventos</a>
+						<a href="/eventos" class="link-success">Todos los eventos</a>
 					</div>
 					<div class="card-body table-responsive p-0">
 						<table class="table table-striped table-valign-middle">
@@ -134,7 +134,8 @@
 					<div class="card-header border-0">
 						<div class="d-flex justify-content-between">
 							<h3 class="card-title">Juegos con mas inscripcciones individuales</h3>
-							<a href="http://127.0.0.1:8000/insinvidviduales" class="link-success">Ver más</a>
+							<a href="/insinvidviduales" class="link-success">Ver más</a>
+							<a href="/recaudacionind" class="link-danger">Reporte</a>
 						</div>
 					</div>
 					<div class="card-body">
@@ -150,7 +151,8 @@
 					<div class="card-header border-0">
 						<div class="d-flex justify-content-between" >
 							<h3 class="card-title">Juegos con mas inscripcciones grupales</h3>
-							<a href="http://127.0.0.1:8000/insgrupales" class="link-success">Ver más</a>
+							<a href="/insgrupales" class="link-success">Listado</a>
+							<a href="/recaudaciongru" class="link-danger">Reporte</a>
 						</div>
 					</div>
 					<div class="card-body">

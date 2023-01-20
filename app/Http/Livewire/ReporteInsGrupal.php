@@ -3,7 +3,9 @@
 namespace App\Http\Livewire;
 
 use App\Models\Insgrupale;
-use Illuminate\Support\Facades\DB;
+use App\Exports\InscripccionesgruExport;
+use App\Http\Controllers\Api\V1\InsgrupaleController;
+use Maatwebsite\Excel\Facades\Excel;
 use Livewire\Component;
 use Barryvdh\DomPDF\Facade\Pdf;
 use App\Models\Insinvidviduale;
@@ -18,6 +20,10 @@ class ReporteInsGrupal extends Component
         return view('livewire.reporteinscripcciongru.view',$list);
     }
 
+    public function excel()
+    {
+        return Excel::download(new InscripccionesgruExport, 'inscripccionesgru.xlsx');
+    }
     public function pdf()
     {
         $list=$this->getJugadores();

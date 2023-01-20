@@ -134,7 +134,7 @@ return [
     'usermenu_header_class' => 'bg-primary',
     'usermenu_image' => false,
     'usermenu_desc' => false,
-    'usermenu_profile_url' => false,
+    'usermenu_profile_url' =>false,
 
     /*
     |--------------------------------------------------------------------------
@@ -317,6 +317,7 @@ return [
             'icon'        => 'fa-solid fa-gauge',
             
         ],
+        
         [
             'text'        => 'Videojuegos',
             'url'         => '/videojuegos',
