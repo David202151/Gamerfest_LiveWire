@@ -57,14 +57,14 @@
 
                             <div class="row">
                             <div class="card-group px=5">
-                                <div class="card">
+                                <div class="card bg-warning">
                                     <img class="card-img-top" src="../imagenes/Imagen1.jpg" alt="Card image cap" height="270">
                                     <div class="card-body">
                                     <h5 class="font-weight-bold text-danger"><strong>Mascaras Gamer</strong> </h5>
                                     <p class="card-text font-weight-normal"><strong>Valor 7 $</strong></p>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card bg-warning">
                                     <img class="card-img-top" src="../imagenes/Imagen2.jpg" alt="Card image cap" height="270">
                                     <div class="card-body">
                                     <h5 class="font-weight-bold text-danger"><strong>Camiseta Gamer Fest Blanca/Azul</strong> </h5>
@@ -72,7 +72,7 @@
                                     
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card bg-warning">
                                     <img class="card-img-top" src="../imagenes/Imagen3.jpg" alt="Card image cap" height="270">
                                     <div class="card-body">
                                     <h5 class="font-weight-bold text-danger"><strong>Camiseta Gamer Fest Alternativa</strong> </h5>
@@ -86,7 +86,7 @@
                               <div class="row py-5">
                               <div class="w-200"></div>
                                 <div class="card-group">
-                                <div class="card">
+                                <div class="card bg-warning">
                                     <img class="card-img-top" src="../imagenes/Imagen 5 .jpg" alt="Card image cap" height="270">
                                     <div class="card-body">
                                     <h5 class="font-weight-bold text-danger"><strong>Teclado Gamer (Trust: Ziva 4-in-1 Gaming Bundle)</strong> </h5>
@@ -94,7 +94,7 @@
                                     
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card bg-warning">
                                     <img class="card-img-top" src="../imagenes/Imagen 6.jpg" alt="Card image cap" height="270">
                                     <div class="card-body">
                                     <h5 class="font-weight-bold text-danger"><strong>Almohada de la carrera de software</strong> </h5>
@@ -102,7 +102,7 @@
                                     
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card bg-warning">
                                     <img class="card-img-top" src="../imagenes/Imagen7.jpg" alt="Card image cap" height="270">
                                     <div class="card-body">
                                     <h5 class="font-weight-bold text-danger"><strong>Teclado Gamer (4 en 1)</strong> </h5>
