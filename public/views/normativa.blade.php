@@ -50,7 +50,7 @@
                    
 
                                 <center>
-                                <embed src="../doc/reglamentos.pdf" type="application/pdf"  width="80%" height="900"> 
+                                <embed src="../doc/reglamentos.pdf" type="application/pdf"  width="100%" height="1000"> 
                                 </center>
                             
 
